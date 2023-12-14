@@ -141,3 +141,12 @@ En C++, se utiliza la clase std::vector para manejar dinámicamente la lista de 
 En C++, se utilizan funciones miembro para operar sobre la estructura, mientras que en C se utilizan funciones que toman la estructura como parámetro.
 La implementación en C++ utiliza el constructor para inicializar la estructura al crear una instancia, lo cual no es posible en C.
 El código en C++ aprovecha las funciones de la biblioteca estándar de C++, mientras que el código en C utiliza funciones de la biblioteca estándar de C (printf, strcpy, etc.).
+
+## Pregunta 3)
+Diferencias notables:
+
+Cadenas de caracteres: Se usan arreglos de caracteres (char) en lugar de objetos de cadena de caracteres de C++ (std::string). Esto implica tener cuidado con la gestión del tamaño y asegurarse de que haya suficiente espacio en los arreglos.
+
+Memoria dinámica: Se utiliza malloc y realloc para gestionar la memoria dinámica para las asistencias. En C++, la clase std::vector maneja esto automáticamente.
+
+Funciones de cadenas: Se utilizan funciones de cadenas como strcpy para copiar cadenas de caracteres en lugar de simplemente asignarlas como en C++. Esto puede requerir una mayor atención para evitar desbordamientos de búfer.
