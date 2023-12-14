@@ -20,6 +20,12 @@ void mostrarestudiante(Estudiante est) {
 void agregarMateria(Estudiante& est, const string& nuevaMateria) {
     est.materias.push_back(nuevaMateria);
 }
+void eliminarMateria(Estudiante& est, const string& materiaAEliminar) {
+    // Utilizar la función erase y remove_if para eliminar la materia
+    est.materias.erase(remove_if(est.materias.begin(), est.materias.end(),
+                                 [&](const string& materia) { return materia == materiaAEliminar; }),
+                       est.materias.end());
+}
 int main(){
     struct Estudiante estudiante1;
     estudiante1.edad = 16;
