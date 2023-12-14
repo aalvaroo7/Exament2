@@ -11,3 +11,15 @@ struct Estudiante {
     float promedio;
     std::vector<std::string> materias;
 };
+// Añadimos funciones para manejar materias
+
+void agregarMateria(Estudiante &e, const std::string &materia) {
+    e.materias.push_back(materia);
+}
+
+void eliminarMateria(Estudiante &e, const std::string &materia) {
+    auto it = std::find(e.materias.begin(), e.materias.end(), materia);
+    if (it != e.materias.end()) {
+        e.materias.erase(it);
+    }
+}
