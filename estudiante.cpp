@@ -17,8 +17,5 @@ int main() {
     estudiante1.edad = 16;
     estudiante1.promedio = 9.8;
     estudiante1.nombre = "Juan"; // Asignando un valor al campo "nombre"
-    imprimirEstudiante(estudiante1);
-    modificarEstudiante(&estudiante1);
-    imprimirEstudiante2(&estudiante1);
     return 0;
 }
