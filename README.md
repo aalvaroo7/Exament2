@@ -172,3 +172,54 @@ Librerías Utilizadas:
 
 En C++, se utilizan las librerías estándar de C++ (iostream, stdexcept) para entrada/salida y manejo de excepciones.
 En C, se utilizan las librerías estándar de C (stdio.h, stdlib.h, string.h) para entrada/salida y manipulación de cadenas.
+
+## Ultima pregunta)
+
+La elección entre C++ y C para un proyecto específico depende de varios factores, incluyendo los requisitos del proyecto, las habilidades del equipo de desarrollo, y los objetivos a largo plazo. Ambos lenguajes tienen ventajas y desventajas. Aquí algunas consideraciones y recomendaciones:
+
+Consideraciones:
+C++:
+
+Ventajas:
+Programación orientada a objetos.
+Abundancia de bibliotecas y características modernas.
+Manejo de excepciones para un mejor control de errores.
+Desventajas:
+Mayor complejidad en comparación con C.
+C:
+
+Ventajas:
+Menos complejidad y curva de aprendizaje más suave.
+Más cercano al hardware, lo que puede ser beneficioso para ciertos tipos de desarrollo.
+Desventajas:
+Menos características modernas en comparación con C++.
+Menos estructuras de programación orientada a objetos.
+Recomendaciones para el equipo de desarrollo del CGEA:
+Evaluar Requisitos y Complejidad del Proyecto:
+
+Evaluar cuidadosamente los requisitos específicos del proyecto del CGEA y la complejidad asociada.
+Si el proyecto implica una gran cantidad de abstracción y programación orientada a objetos, C++ podría ser beneficioso.
+Capacitación del Equipo:
+
+Evaluar las habilidades y experiencia del equipo de desarrollo en C++ y C.
+Si el equipo ya tiene experiencia en C++ y se siente cómodo con las características adicionales, podría ser una elección sólida.
+Manejo de Errores:
+
+Si se considera crítico tener un manejo avanzado de errores, el uso de excepciones en C++ podría ser una ventaja.
+Rendimiento y Eficiencia:
+
+Si el rendimiento es una preocupación clave y se busca un código más eficiente a nivel de hardware, C podría ser una opción.
+Consideraciones de Mantenimiento a Largo Plazo:
+
+Evaluar las consideraciones de mantenimiento a largo plazo y la facilidad de extender el sistema en el futuro.
+Estándares de Codificación:
+
+Establecer estándares de codificación claros independientemente del lenguaje elegido.
+Garantizar que el equipo siga prácticas de desarrollo seguras y coherentes.
+Documentación:
+
+Priorizar la documentación clara y completa del código para facilitar el mantenimiento y la colaboración.
+Prototipo y Pruebas:
+
+Considerar desarrollar un prototipo en ambas tecnologías para evaluar el rendimiento y la mantenibilidad.
+En resumen, la elección entre C++ y C dependerá en gran medida de las necesidades específicas del proyecto y de las habilidades y preferencias del equipo de desarrollo. La evaluación cuidadosa de estos factores ayudará a tomar la decisión más adecuada para el éxito del proyecto del CGEA.
