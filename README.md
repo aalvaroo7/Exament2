@@ -57,3 +57,78 @@ Experiencia del Equipo de Desarrollo:
 C: Si el equipo ya tiene experiencia significativa en C, podría acelerar el desarrollo.
 C++: Si el equipo está familiarizado con la programación orientada a objetos y las características de C++, podría ser más eficiente en términos de desarrollo y mantenimiento.
 Después de evaluar estos factores, el equipo puede llegar a una decisión informada basada en las necesidades específicas del proyecto, la experiencia del equipo y los objetivos a largo plazo para el sistema de gestión académica del CGEA.
+
+
+## Pregunta 1)
+Las principales diferencias entre los códigos en C++ y C son las siguientes:
+
+Sintaxis de inicialización de estructuras:
+En C++, se puede inicializar una estructura utilizando una lista de inicialización, como se muestra en la creación de estudiante1.
+En C, la inicialización de estructuras se realiza asignando valores a cada campo en el orden en que aparecen en la definición de la estructura.
+csharp
+Copy code
+// C++
+Estudiante estudiante1 = {"Juan", 20, 9.5};
+c
+Copy code
+// C
+struct Estudiante estudiante1 = {"Juan", 20, 9.5};
+Métodos en C++:
+En C++, se puede definir una función miembro dentro de la propia estructura, como la función MostrarEstudiante() en el código C++.
+En C, las funciones que operan en estructuras se definen por separado y toman la estructura como un parámetro.
+csharp
+Copy code
+// C++
+struct Estudiante
+{
+    // ...
+
+    // Función miembro en C++
+    void MostrarEstudiante()
+    {
+        // ...
+    }
+};
+c
+Copy code
+// C
+struct Estudiante
+{
+    // ...
+};
+
+// Función en C para mostrar el estudiante
+void mostrarEstudiante(struct Estudiante est)
+{
+    // ...
+}
+Manejo de cadenas:
+En C++, se utiliza el tipo std::string para la cadena de caracteres.
+En C, se utiliza un array de caracteres (char[]) para representar cadenas.
+csharp
+Copy code
+// C++
+public struct Estudiante
+{
+    public string Nombre;
+    // ...
+};
+c
+Copy code
+// C
+struct Estudiante
+{
+    char nombre[50];
+    // ...
+};
+Operadores de entrada/salida:
+En C++, se utilizan funciones de la biblioteca estándar (std::cout, std::endl) para la entrada/salida.
+En C, se utiliza la función printf para la salida.
+csharp
+Copy code
+// C++
+cout << "Nombre: " << est.Nombre << ", Edad: " << est.Edad << ", Promedio: " << est.Promedio << endl;
+c
+Copy code
+// C
+printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", est.nombre, est.edad, est.promedio)
