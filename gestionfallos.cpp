@@ -54,3 +54,21 @@ public:
         }
         std::cout << "\n";
     }
+private:
+    // Funciones de validación con excepciones personalizadas
+    static bool validarFecha(const std::string& fecha) {
+        // Implementa la lógica de validación de fecha según tus requisitos
+        // Por ejemplo, puedes verificar si la fecha tiene el formato correcto.
+        if (fecha.length() != 10) {
+            throw FechaInvalidaException("Formato de fecha inválido");
+        }
+        return true; // Cambiar según la implementación real
+    }
+    static bool validarMateria(const std::string& materia) {
+        // Implementa la lógica de validación de materia según tus requisitos
+        // Por ejemplo, puedes verificar si la materia está registrada.
+        if (materia.empty()) {
+            throw MateriaInvalidaException("La materia no puede estar vacía");
+        }
+        return true; // Cambiar según la implementación real
+    }
