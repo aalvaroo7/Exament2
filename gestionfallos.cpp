@@ -72,3 +72,12 @@ private:
         }
         return true; // Cambiar según la implementación real
     }
+    static bool validarEstado(const std::string& estado) {
+        // Implementa la lógica de validación de estado según tus requisitos
+        // Por ejemplo, puedes verificar si el estado es válido.
+        if (estado != "asistió" && estado != "falta" && estado != "tardanza") {
+            throw EstadoInvalidoException("Estado de asistencia inválido");
+        }
+        return true; // Cambiar según la implementación real
+    }
+};
