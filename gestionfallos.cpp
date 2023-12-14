@@ -70,3 +70,17 @@ private:
         return true; // Cambiar según la implementación real
     }
 };
+int main() {
+    // Ejemplo de uso
+    Estudiante estudiante1 = {1, "Juan", {}};
+
+    try {
+        RegistroAsistencia::registrarAsistencia(estudiante1, "2023-01-10", "Matemáticas", "asistió");
+        RegistroAsistencia::registrarAsistencia(estudiante1, "2023-01-12", "Física", "falta");
+        RegistroAsistencia::mostrarAsistencia(estudiante1);
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Error: " << e.what() << "\n";
+    }
+
+    return 0;
+}
