@@ -17,6 +17,9 @@ void mostrarestudiante(Estudiante est) {
     }
     cout << endl;
 }
+void agregarMateria(Estudiante& est, const string& nuevaMateria) {
+    est.materias.push_back(nuevaMateria);
+}
 int main(){
     struct Estudiante estudiante1;
     estudiante1.edad = 16;
