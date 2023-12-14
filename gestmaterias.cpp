@@ -11,6 +11,7 @@ struct Estudiante {
     float promedio;
     std::vector<std::string> materias;
 };
+
 // Añadimos funciones para manejar materias
 
 void agregarMateria(Estudiante &e, const std::string &materia) {
@@ -23,12 +24,14 @@ void eliminarMateria(Estudiante &e, const std::string &materia) {
         e.materias.erase(it);
     }
 }
+
 void mostrarMaterias(const Estudiante &e) {
     std::cout << "Materias de " << e.nombre << ":" << std::endl;
     for (const auto &materia : e.materias) {
         std::cout << " - " << materia << std::endl;
     }
 }
+
 // Ahora agregamos funcion donde se muestran los datos del estudiante
 
 void mostrarEstudiante(const Estudiante &e) {
