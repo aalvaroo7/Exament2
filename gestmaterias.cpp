@@ -35,4 +35,14 @@ int main(){
     agregarMateria(estudiante1, "Matemáticas");
     agregarMateria(estudiante1, "Física");
     agregarMateria(estudiante1, "Historia");
+    // Mostrar información del estudiante
+    mostrarestudiante(estudiante1);
+
+    // Eliminar una materia
+    eliminarMateria(estudiante1, "Física");
+
+    // Mostrar información después de eliminar materia
+    mostrarestudiante(estudiante1);
+
+    return 0;
 }
