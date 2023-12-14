@@ -17,3 +17,9 @@ class EstadoInvalidoException : public std::invalid_argument {
 public:
     EstadoInvalidoException(const std::string& mensaje) : std::invalid_argument(mensaje) {}
 };
+// Estructura Asistencia
+struct Asistencia {
+    std::string fecha;
+    std::string materia;
+    std::string estado; // Puede ser "asistió", "falta" o "tardanza"
+};
