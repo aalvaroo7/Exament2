@@ -31,4 +31,8 @@ int main(){
     estudiante1.edad = 16;
     estudiante1.promedio = 9.8;
     estudiante1.nombre = "Juan"; // Asignando un valor al campo "nombre"
+    // Agregar materias
+    agregarMateria(estudiante1, "Matemáticas");
+    agregarMateria(estudiante1, "Física");
+    agregarMateria(estudiante1, "Historia");
 }
