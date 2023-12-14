@@ -27,3 +27,13 @@ void registrarAsistencia(struct Estudiante *estudiante, const char *fecha, const
 
     estudiante->numAsistencias++;
 }
+// Función para mostrar la asistencia de un estudiante
+void mostrarAsistencia(const struct Estudiante *estudiante) {
+    printf("Asistencia para el estudiante %s (ID: %d):\n", estudiante->nombre, estudiante->id);
+    for (int i = 0; i < estudiante->numAsistencias; ++i) {
+        printf("Fecha: %s, Materia: %s, Estado: %s\n", estudiante->asistencias[i].fecha,
+               estudiante->asistencias[i].materia, estudiante->asistencias[i].estado);
+    }
+    printf("\n");
+}
+
