@@ -10,3 +10,14 @@ struct Estudiante {
     char materias[10][50];  // Matriz de cadenas para las materias
     int numMaterias;        // Número de materias actualmente inscritas
 };
+// Función para mostrar al estudiante
+void mostrarEstudiante(const struct Estudiante *est) {
+    printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", est->nombre, est->edad, est->promedio);
+
+    // Mostrar las materias
+    printf("Materias inscritas: ");
+    for (int i = 0; i < est->numMaterias; ++i) {
+        printf("%s ", est->materias[i]);
+    }
+    printf("\n");
+}
