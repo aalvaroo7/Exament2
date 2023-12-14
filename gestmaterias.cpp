@@ -1,17 +1,22 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
 using namespace std;
 
-// Agrega el campo 'vector<string> materias' a la estructura Estudiante
+// Estructura Estudiante con un constructor
 struct Estudiante {
     int edad;
     float promedio;
     string nombre;
     vector<string> materias;  // Lista de materias en las que está inscrito
+
+    // Constructor para inicializar la estructura
+    Estudiante(int edad, float promedio, const string& nombre) : edad(edad), promedio(promedio), nombre(nombre) {}
 };
 
-void mostrarestudiante(Estudiante est) {
+// Funciones como métodos de la estructura
+void mostrarEstudiante(const Estudiante& est) {
     cout << "Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << endl;
 
     // Mostrar las materias
@@ -34,10 +39,8 @@ void eliminarMateria(Estudiante& est, const string& materiaAEliminar) {
 }
 
 int main() {
-    struct Estudiante estudiante1;
-    estudiante1.edad = 16;
-    estudiante1.promedio = 9.8;
-    estudiante1.nombre = "Juan"; // Asignando un valor al campo "nombre"
+    // Utilizar el constructor para inicializar el estudiante
+    Estudiante estudiante1(16, 9.8, "Juan");
 
     // Agregar materias
     agregarMateria(estudiante1, "Matemáticas");
@@ -45,13 +48,13 @@ int main() {
     agregarMateria(estudiante1, "Historia");
 
     // Mostrar información del estudiante
-    mostrarestudiante(estudiante1);
+    mostrarEstudiante(estudiante1);
 
     // Eliminar una materia
     eliminarMateria(estudiante1, "Física");
 
     // Mostrar información después de eliminar materia
-    mostrarestudiante(estudiante1);
+    mostrarEstudiante(estudiante1);
 
     return 0;
 }
