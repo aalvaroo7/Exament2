@@ -150,3 +150,25 @@ Cadenas de caracteres: Se usan arreglos de caracteres (char) en lugar de objetos
 Memoria dinámica: Se utiliza malloc y realloc para gestionar la memoria dinámica para las asistencias. En C++, la clase std::vector maneja esto automáticamente.
 
 Funciones de cadenas: Se utilizan funciones de cadenas como strcpy para copiar cadenas de caracteres en lugar de simplemente asignarlas como en C++. Esto puede requerir una mayor atención para evitar desbordamientos de búfer.
+
+## Pregunta 4)
+
+Principales diferencias:
+
+Manejo de Excepciones (C++):
+
+En C++, se utilizan excepciones (try, catch) para manejar errores y situaciones excepcionales.
+Se definen excepciones personalizadas (FechaInvalidaException, MateriaInvalidaException, EstadoInvalidoException).
+El flujo del programa cambia dinámicamente en caso de error.
+Códigos de Error (C):
+
+En C, se utilizan códigos de error para indicar el resultado de las operaciones.
+No hay un mecanismo de excepciones, y el flujo del programa sigue siendo lineal.
+Se necesitan funciones adicionales para validar y manejar errores.
+Sintaxis y Estilo de Lenguaje:
+
+La sintaxis y el estilo de lenguaje son diferentes entre C++ y C, pero las estructuras básicas (structs, funciones) son similares.
+Librerías Utilizadas:
+
+En C++, se utilizan las librerías estándar de C++ (iostream, stdexcept) para entrada/salida y manejo de excepciones.
+En C, se utilizan las librerías estándar de C (stdio.h, stdlib.h, string.h) para entrada/salida y manipulación de cadenas.
