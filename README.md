@@ -2,7 +2,7 @@
 
 https://github.com/aalvaroo7/Exament2.git
 
-## Preguntas de elección múltiple
+# Preguntas de elección múltiple
 
 Pregunta 1)
 
@@ -28,7 +28,7 @@ b) Permiten la creación de funciones y clases genéricas, es decir, que pueden 
 
 Los templates en C++ son una característica que permite la creación de funciones y clases genéricas. Esto significa que puedes escribir código que puede trabajar con diferentes tipos de datos sin tener que reescribir el código para cada tipo específico. Los templates son una forma de lograr la programación genérica en C++, y son ampliamente utilizados para escribir código que es independiente del tipo de datos con el que opera
 
-## Preguntas de desarrollo de código
+# Preguntas de desarrollo de código
 
 ¿Que lenguaje elegir?
 
