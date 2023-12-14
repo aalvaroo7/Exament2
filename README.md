@@ -171,3 +171,31 @@ En la función main, se crean dos instancias de Estudiante (estudiante1 y estudi
 
 En resumen, este código demuestra cómo utilizar estructuras y clases en C++ para modelar la información de asistencia de estudiantes, permitiendo el registro y la visualización de la misma.
 
+## Gestion de fallos
+
+
+Este código en C++ demuestra el uso de excepciones personalizadas para gestionar errores específicos relacionados con el registro de asistencia de estudiantes. Aquí tienes una explicación paso a paso:
+
+Definición de Excepciones Personalizadas:
+Se han definido tres clases de excepciones personalizadas que heredan de std::invalid_argument. Estas excepciones son FechaInvalidaException, MateriaInvalidaException, y EstadoInvalidoException. Cada una tiene un constructor que recibe un mensaje y lo pasa al constructor de la clase base (std::invalid_argument).
+
+Estructura Asistencia:
+La estructura Asistencia representa la información relacionada con la asistencia de un estudiante, incluyendo la fecha, la materia y el estado (asistió, falta o tardanza).
+
+Estructura Estudiante:
+La estructura Estudiante representa la información de un estudiante, incluyendo un identificador (id), nombre y un vector de asistencias (asistencias).
+
+Clase RegistroAsistencia:
+La clase RegistroAsistencia contiene funciones estáticas para registrar y mostrar la asistencia de un estudiante. Además, incluye funciones privadas de validación con excepciones personalizadas (validarFecha, validarMateria y validarEstado).
+
+registrarAsistencia: Registra la asistencia de un estudiante después de validar la fecha, la materia y el estado utilizando funciones privadas. Si la validación falla, lanza una excepción con un mensaje específico.
+
+mostrarAsistencia: Muestra en la consola la información de asistencia para un estudiante.
+
+Funciones de validación (validarFecha, validarMateria, validarEstado): Realizan la validación correspondiente y lanzan excepciones personalizadas en caso de errores.
+
+Función main:
+En el main, se crea un estudiante (estudiante1) y se intenta registrar asistencias utilizando la clase RegistroAsistencia. Si ocurre algún error, se capturan las excepciones y se imprime un mensaje de error correspondiente.
+
+Este código proporciona un ejemplo de cómo usar excepciones personalizadas para manejar errores específicos en un programa que registra la asistencia de estudiantes. Las excepciones permiten una gestión más detallada de los errores, proporcionando mensajes específicos sobre la naturaleza del problema.
+
