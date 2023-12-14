@@ -41,3 +41,11 @@ public:
             throw std::invalid_argument("Error en el registro de asistencia");
         }
     }
+    // Función para mostrar la asistencia de un estudiante
+    static void mostrarAsistencia(const Estudiante& estudiante) {
+        std::cout << "Asistencia para el estudiante " << estudiante.nombre << " (ID: " << estudiante.id << "):\n";
+        for (const auto& asistencia : estudiante.asistencias) {
+            std::cout << "Fecha: " << asistencia.fecha << ", Materia: " << asistencia.materia << ", Estado: " << asistencia.estado << "\n";
+        }
+        std::cout << "\n";
+    }
