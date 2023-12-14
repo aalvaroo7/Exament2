@@ -39,3 +39,20 @@ public:
         cout << endl;
     }
 };
+int main() {
+    // Crear estudiantes
+    Estudiante estudiante1(1, 20, 9.5, "Juan");
+    Estudiante estudiante2(2, 22, 8.7, "Maria");
+
+    // Registrar asistencias
+    RegistroAsistencia::registrarAsistencia(estudiante1, "2023-01-10", "Matemáticas", "asistió");
+    RegistroAsistencia::registrarAsistencia(estudiante1, "2023-01-12", "Física", "falta");
+    RegistroAsistencia::registrarAsistencia(estudiante2, "2023-01-10", "Matemáticas", "tardanza");
+    RegistroAsistencia::registrarAsistencia(estudiante2, "2023-01-12", "Física", "asistió");
+
+    // Mostrar asistencias
+    RegistroAsistencia::mostrarAsistencia(estudiante1);
+    RegistroAsistencia::mostrarAsistencia(estudiante2);
+
+    return 0;
+}
