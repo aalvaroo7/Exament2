@@ -132,3 +132,12 @@ c
 Copy code
 // C
 printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", est.nombre, est.edad, est.promedio)
+
+## Pregunta 2)
+
+Diferencias notables:
+
+En C++, se utiliza la clase std::vector para manejar dinámicamente la lista de materias, mientras que en C se utiliza una matriz de caracteres fija (char materias[10][50]).
+En C++, se utilizan funciones miembro para operar sobre la estructura, mientras que en C se utilizan funciones que toman la estructura como parámetro.
+La implementación en C++ utiliza el constructor para inicializar la estructura al crear una instancia, lo cual no es posible en C.
+El código en C++ aprovecha las funciones de la biblioteca estándar de C++, mientras que el código en C utiliza funciones de la biblioteca estándar de C (printf, strcpy, etc.).
