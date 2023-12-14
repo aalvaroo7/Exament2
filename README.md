@@ -27,3 +27,33 @@ Pregunta 4)
 b) Permiten la creación de funciones y clases genéricas, es decir, que pueden trabajar con cualquier tipo de datos.
 
 Los templates en C++ son una característica que permite la creación de funciones y clases genéricas. Esto significa que puedes escribir código que puede trabajar con diferentes tipos de datos sin tener que reescribir el código para cada tipo específico. Los templates son una forma de lograr la programación genérica en C++, y son ampliamente utilizados para escribir código que es independiente del tipo de datos con el que opera
+
+## Preguntas de desarrollo de código
+
+¿Que lenguaje elegir?
+
+En este contexto, el equipo de desarrollo está buscando decidir qué lenguaje de programación, entre C y C++, es más adecuado para implementar el nuevo sistema de gestión académica para el "Centro Global de Estudios Avanzados" (CGEA). La información del estudiante se utilizará como parte de la estructura básica del sistema.
+
+Para tomar una decisión informada, el equipo puede realizar una comparación detallada de las características y ventajas de ambos lenguajes. Aquí hay algunos aspectos clave a considerar:
+
+Simplicidad y Elegancia:
+
+C: Es un lenguaje más simple y minimalista. Si el proyecto no requiere características orientadas a objetos, C podría ser más directo.
+C++: Es una extensión de C e incluye características adicionales, como la programación orientada a objetos. Si se necesitan estas características, C++ podría ser más apropiado.
+Programación Orientada a Objetos (OOP):
+
+C: No es un lenguaje orientado a objetos, por lo que no tiene las capacidades inherentes de la OOP.
+C++: Ofrece soporte completo para la programación orientada a objetos. Si se planea utilizar la OOP en el sistema, C++ sería más beneficioso.
+Facilidades de Gestión de Memoria:
+
+C: Requiere una gestión manual de la memoria, lo que podría ser más propenso a errores.
+C++: Aunque también permite la gestión manual, incluye características como constructores y destructores que facilitan la gestión automática de la memoria.
+Librerías y Ecosistema:
+
+C: Tiene un conjunto básico de librerías. Para tareas más específicas, podrían necesitarse librerías adicionales.
+C++: Tiene un ecosistema más amplio de librerías y herramientas, lo que podría facilitar el desarrollo y la expansión futura del sistema.
+Experiencia del Equipo de Desarrollo:
+
+C: Si el equipo ya tiene experiencia significativa en C, podría acelerar el desarrollo.
+C++: Si el equipo está familiarizado con la programación orientada a objetos y las características de C++, podría ser más eficiente en términos de desarrollo y mantenimiento.
+Después de evaluar estos factores, el equipo puede llegar a una decisión informada basada en las necesidades específicas del proyecto, la experiencia del equipo y los objetivos a largo plazo para el sistema de gestión académica del CGEA.
