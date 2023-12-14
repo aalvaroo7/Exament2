@@ -1,28 +1,24 @@
 #include <iostream>
+#include <iomanip>
 #include <string>
-#include <vector>
 using namespace std;
-struct Estudiante {
+
+struct estudiante {
     int edad;
     float promedio;
-    string nombre;
+    string nombre; // Agregado el campo "nombre" como un string
 };
-void mostrarestudiante(Estudiante est) {
-    cout << "Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << est.promedio << endl;
 
-    // Mostrar las materias
-    cout << "Materias inscritas: ";
-    for (const auto& materia : est.materias) {
-        cout << materia << " ";
-    }
-    cout << endl;
+void imprimirEstudiante(estudiante est) {
+    cout << "Nombre: " << est.nombre << ", Edad: " << est.edad << ", Promedio: " << fixed << setprecision(2) << est.promedio << endl;
 }
-void agregarMateria(Estudiante& est, const string& nuevaMateria) {
-    est.materias.push_back(nuevaMateria);
-}
-int main(){
-    struct Estudiante estudiante1;
+int main() {
+    struct estudiante estudiante1;
     estudiante1.edad = 16;
     estudiante1.promedio = 9.8;
     estudiante1.nombre = "Juan"; // Asignando un valor al campo "nombre"
+    imprimirEstudiante(estudiante1);
+    modificarEstudiante(&estudiante1);
+    imprimirEstudiante2(&estudiante1);
+    return 0;
 }
