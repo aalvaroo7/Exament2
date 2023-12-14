@@ -81,3 +81,23 @@ private:
         return true; // Cambiar según la implementación real
     }
 };
+int main() {
+    // Ejemplo de uso con excepciones personalizadas
+    Estudiante estudiante1 = {1, "Juan", {}};
+
+    try {
+        RegistroAsistencia::registrarAsistencia(estudiante1, "2023-01-10", "Matemáticas", "asistió");
+        RegistroAsistencia::registrarAsistencia(estudiante1, "2023-01-12", "Física", "falta");
+        RegistroAsistencia::mostrarAsistencia(estudiante1);
+    } catch (const std::invalid_argument& e) {
+        std::cerr << "Error: " << e.what() << "\n";
+    } catch (const FechaInvalidaException& e) {
+        std::cerr << "Error de fecha: " << e.what() << "\n";
+    } catch (const MateriaInvalidaException& e) {
+        std::cerr << "Error de materia: " << e.what() << "\n";
+    } catch (const EstadoInvalidoException& e) {
+        std::cerr << "Error de estado: " << e.what() << "\n";
+    }
+
+    return 0;
+}
