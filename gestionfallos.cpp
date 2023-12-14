@@ -23,3 +23,21 @@ struct Asistencia {
     std::string materia;
     std::string estado; // Puede ser "asistió", "falta" o "tardanza"
 };
+// Estructura Estudiante
+struct Estudiante {
+    int id;
+    std::string nombre;
+    std::vector<Asistencia> asistencias;
+};
+// Clase RegistroAsistencia
+class RegistroAsistencia {
+public:
+    // Función para registrar la asistencia de un estudiante
+    static void registrarAsistencia(Estudiante& estudiante, const std::string& fecha, const std::string& materia, const std::string& estado) {
+        if (validarFecha(fecha) && validarMateria(materia) && validarEstado(estado)) {
+            Asistencia nuevaAsistencia = {fecha, materia, estado};
+            estudiante.asistencias.push_back(nuevaAsistencia);
+        } else {
+            throw std::invalid_argument("Error en el registro de asistencia");
+        }
+    }
