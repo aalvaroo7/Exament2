@@ -72,3 +72,29 @@ void mostrarAsistencia(const struct Estudiante *estudiante) {
     }
     printf("\n");
 }
+int main() {
+    // Ejemplo de uso
+    struct Estudiante estudiante1 = {1, "Juan", {}, 0};
+
+    int resultado = registrarAsistencia(&estudiante1, "2023-01-10", "Matemáticas", "asistió");
+    if (resultado == 1) {
+        printf("Asistencia registrada con éxito.\n");
+    } else if (resultado == 0) {
+        printf("Error en el registro de asistencia.\n");
+    } else if (resultado == -1) {
+        printf("No hay espacio para más asistencias.\n");
+    }
+
+    resultado = registrarAsistencia(&estudiante1, "2023-01-12", "Física", "falta");
+    if (resultado == 1) {
+        printf("Asistencia registrada con éxito.\n");
+    } else if (resultado == 0) {
+        printf("Error en el registro de asistencia.\n");
+    } else if (resultado == -1) {
+        printf("No hay espacio para más asistencias.\n");
+    }
+
+    mostrarAsistencia(&estudiante1);
+
+    return 0;
+}
