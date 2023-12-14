@@ -21,3 +21,12 @@ void mostrarEstudiante(const struct Estudiante *est) {
     }
     printf("\n");
 }
+// Función para agregar una materia
+void agregarMateria(struct Estudiante *est, const char *nuevaMateria) {
+    if (est->numMaterias < 10) {
+        strcpy(est->materias[est->numMaterias], nuevaMateria);
+        est->numMaterias++;
+    } else {
+        printf("No se pueden agregar más materias.\n");
+    }
+}
