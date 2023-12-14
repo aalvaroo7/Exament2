@@ -36,4 +36,25 @@ void mostrarAsistencia(const struct Estudiante *estudiante) {
     }
     printf("\n");
 }
+int main() {
+    // Crear estudiantes
+    struct Estudiante estudiante1 = {1, 20, 9.5, "Juan", NULL, 0};
+    struct Estudiante estudiante2 = {2, 22, 8.7, "Maria", NULL, 0};
+
+    // Registrar asistencias
+    registrarAsistencia(&estudiante1, "2023-01-10", "Matemáticas", "asistió");
+    registrarAsistencia(&estudiante1, "2023-01-12", "Física", "falta");
+    registrarAsistencia(&estudiante2, "2023-01-10", "Matemáticas", "tardanza");
+    registrarAsistencia(&estudiante2, "2023-01-12", "Física", "asistió");
+
+    // Mostrar asistencias
+    mostrarAsistencia(&estudiante1);
+    mostrarAsistencia(&estudiante2);
+
+    // Liberar memoria de asistencias
+    free(estudiante1.asistencias);
+    free(estudiante2.asistencias);
+
+    return 0;
+}
 
