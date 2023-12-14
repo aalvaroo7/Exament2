@@ -44,4 +44,31 @@ int validarEstado(const char *estado) {
     }
     return 1; // Estado válido
 }
+// Función para registrar la asistencia de un estudiante
+int registrarAsistencia(struct Estudiante *estudiante, const char *fecha, const char *materia, const char *estado) {
+    if (validarFecha(fecha) && validarMateria(materia) && validarEstado(estado)) {
+        if (estudiante->numAsistencias < 100) {
+            struct Asistencia nuevaAsistencia;
+            strcpy(nuevaAsistencia.fecha, fecha);
+            strcpy(nuevaAsistencia.materia, materia);
+            strcpy(nuevaAsistencia.estado, estado);
 
+            estudiante->asistencias[estudiante->numAsistencias++] = nuevaAsistencia;
+            return 1; // Asistencia registrada con éxito
+        } else {
+            return -1; // No hay espacio para más asistencias
+        }
+    } else {
+        return 0; // Error en el registro de asistencia
+    }
+}
+
+// Función para mostrar la asistencia de un estudiante
+void mostrarAsistencia(const struct Estudiante *estudiante) {
+    printf("Asistencia para el estudiante %s (ID: %d):\n", estudiante->nombre, estudiante->id);
+    for (int i = 0; i < estudiante->numAsistencias; ++i) {
+        printf("Fecha: %s, Materia: %s, Estado: %s\n", estudiante->asistencias[i].fecha,
+               estudiante->asistencias[i].materia, estudiante->asistencias[i].estado);
+    }
+    printf("\n");
+}
