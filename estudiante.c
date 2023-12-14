@@ -1,8 +1,10 @@
+#include <iostream>
+#include <string>
 using System;
 
-public struct Estudiante
+ struct Estudiante
 {
     public int Edad;
     public float Promedio;
     public string Nombre;
-}
+};
