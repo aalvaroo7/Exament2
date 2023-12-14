@@ -1,10 +1,9 @@
-#include <iostream>
-#include <string>
-using System;
+#include <stdio.h>
 
- struct Estudiante
+// Definición de la estructura Estudiante
+struct Estudiante
 {
-    public int Edad;
-    public float Promedio;
-    public string Nombre;
+    char nombre[50];
+    int edad;
+    float promedio;
 };
