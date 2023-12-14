@@ -16,3 +16,9 @@ int main()
 {
     // Crear un estudiante
     struct Estudiante estudiante1 = {"Juan", 20, 9.5};
+
+    // Llamar a la función para mostrar el estudiante
+    mostrarEstudiante(estudiante1);
+
+    return 0;
+}
