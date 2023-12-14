@@ -49,3 +49,24 @@ public:
         }
         std::cout << "\n";
     }
+
+private:
+    // Funciones de validación
+    static bool validarFecha(const std::string& fecha) {
+        // Implementa la lógica de validación de fecha según tus requisitos
+        // Por ejemplo, puedes verificar si la fecha tiene el formato correcto.
+        return true; // Cambiar según la implementación real
+    }
+
+    static bool validarMateria(const std::string& materia) {
+        // Implementa la lógica de validación de materia según tus requisitos
+        // Por ejemplo, puedes verificar si la materia está registrada.
+        return true; // Cambiar según la implementación real
+    }
+
+    static bool validarEstado(const std::string& estado) {
+        // Implementa la lógica de validación de estado según tus requisitos
+        // Por ejemplo, puedes verificar si el estado es válido.
+        return true; // Cambiar según la implementación real
+    }
+};
